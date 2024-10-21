@@ -66,14 +66,15 @@ h2 {
     color: bisque;
     padding: 20px;
 }
-/*para nuestros elementos p colocamos texto justificado, un interlineado y un padding de 20px
-logrando asi darle armonia junto con las imagenes*/
+/*trabajamos nuestros elemntos H3*/
 h3 {
     text-align: justify;
-    line-height: 1.5;/*interlineado*/
+    
     padding: 20px;
     font-weight: bold;
 }
+/*para nuestros elementos p colocamos texto justificado, un interlineado y un padding de 20px
+logrando asi darle armonia junto con las imagenes*/
 p {
     text-align: justify;
     line-height: 1.5;/*interlineado*/
