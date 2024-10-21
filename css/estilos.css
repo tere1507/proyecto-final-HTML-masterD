@@ -15,7 +15,7 @@ body {
 }
 /*damos estilos a nuestro encabezado con posicion sticky para lograr que nuestro encabezado recora
 todo el cuerpo cuando nos deslizamos hacia abajo, el color lo hemos degradado*/
-header{
+header {
     background: linear-gradient(rgb(255, 0, 132), rgb(188, 125, 149));
     padding-bottom: 30px;
     position:sticky;
@@ -42,60 +42,68 @@ h1 {
     margin: 0;
 }
 /*damos estilo a nuestro menu de navegacion*/
-a{
+a {
     padding: 20px;
     text-decoration: none;
     color:bisque;
     font-size: 21px;
+    font-weight: bold;/*para hacer los textos negrita*/
     
 }
 /*con hover logramos que cuando el usuario pase con el maus cambie de color y sepa en que pestaña
 se encuentra*/
-a:hover{
+a:hover {
     color: brown;
     font-size: 25px;
 }
-.color{
+.color {
     color: blue;
 }
 
 /*trabajamos nuestros H2*/
-h2{
+h2 {
     font-size: 22px;
     color: bisque;
     padding: 20px;
 }
 /*para nuestros elementos p colocamos texto justificado, un interlineado y un padding de 20px
 logrando asi darle armonia junto con las imagenes*/
-p{
+h3 {
     text-align: justify;
     line-height: 1.5;/*interlineado*/
     padding: 20px;
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+    line-height: 1.5;/*interlineado*/
+    padding: 20px;
+    
 }
 /*colocamo float a nuestra imagen de seccion para poder moverla y ajustar a nuestro texto*/
-.img-sect{
+.img-sect {
     float: left;
     margin-left: 20px;
 }
 /*creamos estilo a nuestros div*/
-div{
+div {
     padding: 20px;
     color: blue;
 }
 /*creamos estilos para nuestras imagenes de pie de pagina*/
-.img-footer{
+.img-footer {
     float:left;/*nos ayuda a mover las imagenes y poder trabajar en los estilos*/
     border-radius: 40px;/*utilizamos este atributo para hacer circular nuetras imagenes de redes sociales*/
     width: 35px;
     height: 35px;
     margin: 10px;/*con este atributo le damos espacio entre las imagenes de redes sociales*/
 }
-.foot{
+.foot { 
     color: blue;
     font-size: 15px;
 }
 /*trabajamos los estilos del aviso legal*/
-.mostrarAviso{
+.mostrarAviso {
     text-decoration: underline;/*quiero que aparezaca una linea debajo del texto*/
     color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -103,10 +111,10 @@ div{
     
 }
 /*mediante los siguientes estilos estamos ordenando que nuestro aviso legal se desplegable*/
-.mostrarAviso:hover + .avisolegal{
+.mostrarAviso:hover + .avisolegal {
     display: block;
 }
-.avisolegal{
+.avisolegal {
     /* estilo de aviso legal*/
     display: none;/*inicialmente oculto*/
     border: 1px solid black;
@@ -114,15 +122,15 @@ div{
     
 }
 /*vamos a trabajar nuestras imagenes de la pestaña producto*/
-.imgProducto{
+.imgProducto {
     width: 305px;
     height: 305px;
     float: left;
     padding: 15px;   
 }
-.cierreFloat{/*creamos este estilo para cerrar el float de las imagenes de pagina producto*/
+.cierreFloat {/*creamos este estilo para cerrar el float de las imagenes de pagina producto*/
     clear: both;
  }
- iframe{
+ iframe {
     padding: 20px;/*para dar espacio a nuestra ubicaion*/
  }
