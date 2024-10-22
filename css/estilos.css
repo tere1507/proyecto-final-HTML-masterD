@@ -64,28 +64,29 @@ a:hover {
 h2 {
     font-size: 22px;
     color: bisque;
-    padding: 20px;
-}
+    margin: 20px;
+    }
 /*trabajamos nuestros elemntos H3*/
 h3 {
-    text-align: justify;
-    
-    padding: 20px;
-    font-weight: bold;
+    margin-left: 25px;
+    font-weight: bold;/*colocamos nuestro h3 en negrito*/
 }
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.5;
+    color: black;
+ }
 /*para nuestros elementos p colocamos texto justificado, un interlineado y un padding de 20px
 logrando asi darle armonia junto con las imagenes*/
 p {
+    margin: 30px;
     text-align: justify;
-    line-height: 1.5;/*interlineado*/
-    padding: 20px;
-    
+    line-height: 1.5;
 }
-/*colocamo float a nuestra imagen de seccion para poder moverla y ajustar a nuestro texto*/
-.img-sect {
-    float: left;
-    margin-left: 20px;
-}
+
 /*creamos estilo a nuestros div*/
 div {
     padding: 20px;
