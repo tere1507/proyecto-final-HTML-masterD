@@ -43,7 +43,7 @@ h1 {
 }
 /*damos estilo a nuestro menu de navegacion*/
 a {
-    padding: 20px;
+    margin: 20px;
     text-decoration: none;
     color:bisque;
     font-size: 21px;
@@ -65,11 +65,7 @@ h2 {
     font-size: 22px;
     color: bisque;
     margin: 20px;
-    }
-/*trabajamos nuestros elemntos H3*/
-h3 {
-    margin-left: 25px;
-    font-weight: bold;/*colocamos nuestro h3 en negrito*/
+    padding: 10px;
 }
 .contenedor {
     display: flex;
@@ -78,7 +74,7 @@ h3 {
     text-align: justify;
     line-height: 1.5;
     color: black;
- }
+}
 /*para nuestros elementos p colocamos texto justificado, un interlineado y un padding de 20px
 logrando asi darle armonia junto con las imagenes*/
 p {
