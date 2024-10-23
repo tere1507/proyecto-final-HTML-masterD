@@ -23,6 +23,15 @@ header {
     color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* creamos una media screen para cambio de pantalla y se coloque de forma vertical*/
+@media screen and (max-width: 600px){
+    nav a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+}
 /*damos estilos a todas las imagenes de nuestra pestaña Index*/
 img {
     width: 125px;
