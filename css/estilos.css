@@ -53,12 +53,15 @@ h1 {
 }
 /*damos estilo a nuestro menu de navegacion*/
 a {
+    width: 100px;/*para hacer que el texto no se mueva cuando pasamos el cursor por encima*/
     margin: 20px;
     text-decoration: none;
     color:bisque;
     font-size: 21px;
     font-weight: bold;/*para hacer los textos negrita*/
-    
+    display: inline-block;/*para lograr que nuestro texto no se mueva cuando el cursor pase por encima*/
+    height: 55px;/*ancho de la cajita del texto*/
+    overflow: hidden;/*hace que el contenido permanezca dentro de los limites caso contario se recorte*/
 }
 /*con hover logramos que cuando el usuario pase con el maus cambie de color y sepa en que pestaña
 se encuentra*/
