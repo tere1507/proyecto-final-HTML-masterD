@@ -28,21 +28,28 @@
         tambien colocamos el atributo required para obligar al usuario a rellenar todos los campos
         si no lo hace correctamente no podra enviar el formulario-->
        <form>
-        <label>Name :</label><input type="text" placeholder="Name and Last Name" required><br><br>
-        <label>E-mail :</label><input type="text" placeholder=" example@google.com" required><br><br>
-        <label>Phone :</label><input type="text" placeholder="991137971" required><br><br>
+        <label>Name :</label><input type="text" placeholder="Name and Last Name" required>
+        <label>E-mail :</label><input type="text" placeholder=" example@google.com" required>
+        <label>Phone :</label><input type="text" placeholder="991137971" required>
         <!--creamos nuestro campo donde el usuario podra solicitar mas inf. en un texto de 30 columnas
         y de filas con nuestra etiqueta textarea-->
-        <label> Request more information here:</label><br>
-        <textarea cols="30" rows="10"></textarea><br><br>
+        <label> Request more information here:</label>
+        <textarea cols="30" rows="10"></textarea><br>
         <!--creamos nuestra boton de politica de privacidad con un checkbox-->
-        <input type="checkbox" required>Accept the privacy policy<br><br>
-        <label >¿Would you like to receive promotions for our products?</label><br><br>
-        <input type="radio" name="opcion" required>Yes<!--valor name nos sirve para elejir ina sola opcion de los inputs radio-->
-        <input type="radio" name="opcion" required>No
-        <input type="radio" name="opcion" required>Maybe<br><br>
-        <input type="submit" value="Submit"><!--al colocar value aparece el sonbre dentro del boton-->
-        <input type="reset" value="Reset"><br><br>
+        <div class="checkbox">
+        <label>Accept the privacy policy:</label>
+        <input type="checkbox" id="privacy" name="privacy" required>
+        </div>
+        <label >¿Would you like to receive promotions for our products?</label>
+        <div class="checkbox">
+            <input type="radio" name="opcion" required>Yes<!--valor name nos sirve para elejir ina sola opcion de los inputs radio-->
+            <input type="radio" name="opcion" required>No
+            <input type="radio" name="opcion" required>Maybe
+        </div>    
+        <div >
+            <input class="button" type="submit" value="Submit"><!--al colocar value aparece el sonbre dentro del boton-->
+            <input class="button"  type="reset" value="Reset">
+        </div>
         
        </form>
     </main>

@@ -23,7 +23,7 @@ header {
     color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* creamos una media screen para cambio de pantalla y se coloque de forma vertical*/
+/* creamos una media screen para  nuestro menu cuando exista cambio de pantalla y se coloque de forma vertical*/
 @media screen and (max-width: 600px){
     nav a {
         float: none;
@@ -32,15 +32,16 @@ header {
         width: 100%;
     }
 }
-/*damos estilos a todas las imagenes de nuestra pestaña Index*/
-img {
-    width: 125px;
-    height: 125px;
-}
 /*colocamos float a la imagen del encabezado ya que necesitamos moverla a la derecha para armonizar
 con los demas elemntos del encabezado*/
 .img-encabezado {
-        float: right;
+    width: 125px;
+    height: 125px;
+    float: right;
+}
+.img-sect{
+    width: 200px;
+    height: 250px;
 }
 /*damos estilo a nuestros H1 de nuestro HTML*/
 h1 {
@@ -128,12 +129,17 @@ div {
     padding: 10px;
     
 }
+h3 {
+    margin-left: 25px;
+}
 /*vamos a trabajar nuestras imagenes de la pestaña producto*/
 .imgProducto {
-    width: 305px;
-    height: 305px;
+    width: 300px;
+    height: 450px;
     float: left;
-    padding: 15px;   
+    padding: 15px;  
+    object-fit: cover;/*para poder recortar segun nuestras necesidades y no distorcionar la img*/
+    object-position: top;/* para ajustar la img y que no quede cortada la img*/
 }
 .cierreFloat {/*creamos este estilo para cerrar el float de las imagenes de pagina producto*/
     clear: both;
@@ -141,3 +147,42 @@ div {
  iframe {
     padding: 20px;/*para dar espacio a nuestra ubicaion*/
  }
+ /*trabajamos las dimensiones de nuestro formulario*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;/*ajustamos el ancho*/
+    margin: 30px;/*centra el formulario horizontamemte*/
+}
+label {
+    margin-bottom: 5px;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;/*ocupa todo el ancho disponible*/
+}
+textarea {
+    height: 100px;/*ajstamos la altura*/
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: black;
+    white-space: nowrap;/*para evitar que el navegador coloque saltos de linea automatico*/
+}
+.button {
+    font-size: 14px;
+    width: 70px; /* Ajustamos el ancho del cuadro para que sea armonioso*/
+    margin: 10px; /* Añadimos márgenes para separar los botones */
+    background-color: bisque;/* colocamos un relleno interno*/
+    border-radius: 5px;
+}
+/*damos un toque profesional al pasar el cursor por encima de los botones*/
+.button:hover {
+    color: purple;
+    font-size: 15px;
+    font-weight: bold;/*para hacer los textos negrita*/
+}
